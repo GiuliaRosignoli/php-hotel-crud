@@ -13,7 +13,7 @@ if($result && $result->num_rows > 0){
 
     while($row = $result->fetch_assoc()) {
         $customers[] = $row;
-    } var_dump($customers);
+    } // var_dump($customers);
     
 }  else {
     echo 'query error';
