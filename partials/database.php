@@ -32,9 +32,7 @@ if($result && $result->num_rows > 0){
     }
 } elseif($result){
     echo '<h2>No results found </h2>';
-} else {
-    echo 'query error';
-}
+} 
 
 
 
