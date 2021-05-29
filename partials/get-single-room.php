@@ -1,14 +1,14 @@
 <?php
 
-require_once __DIR__ .'./database.php';
+require_once __DIR__ .'/database.php';
 
 //get room id
 
 $id = empty($_GET['id']) ? false : $_GET['id'];
 
 if($id){
-    $stmt = $ $conn->prepare("SELECT * FROM `stanze` WHERE `id`= '$id'");
-    $stmt->bind-param('s', $id);
+    $stmt = $conn->prepare("SELECT * FROM `stanze` WHERE `id`= ?");
+    $stmt->bind_param('s', $id);
     //execute 
     $stmt->execute();
     //get results
