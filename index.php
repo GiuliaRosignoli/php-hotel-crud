@@ -1,4 +1,4 @@
-<?php require_once __DIR__ .'/partials/get-customers.php'; ?>
+<?php require_once __DIR__ .'/partials/get-rooms.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,20 +7,27 @@ require_once __DIR__ . '/partials/head.php'; ?>
 
 <body>
     <main>
-        <h1>Customer archive</h1>
+        <h1>Rooms archive</h1>
         <table>
             <thead>
             <tr>
-                <th></th>
-                <th></th>
+                <th>id</th>
+                <th>Room</th>
                 <th></th>
             </tr>
             </thead>
             <tbody>
                 <?php  //Loop
-                    if(!empty($customers)){
-                        foreach($customers as)
-                    }
+                    if(!empty($rooms)){
+                        foreach($rooms as $room) {?>
+                        <tr>
+                            <td><?php echo $room['id'];?></td>
+                            <td><?php echo $room['room_number'];?></td>
+                            <td><a class="text-success" href="./show.php?id=<?php echo $room['id'];?>"></a></td>
+                        </tr>
+                    <?php } 
+                }
+
                 ?>
             </tbody>
         </table>
