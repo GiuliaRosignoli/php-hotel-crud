@@ -1,20 +1,56 @@
 /* General */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #051937;
     font-size: 1rem;
     color: #fff;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     padding: 20px;
+    padding-bottom: 4rem;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
-    background-color: #051937;
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+/* Table */
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #fff;
+    line-height: 2rem;
+}
+
+thead {
+    font-size: 1.3rem;
+}
+
+th {
+    padding-right: 5rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
 }

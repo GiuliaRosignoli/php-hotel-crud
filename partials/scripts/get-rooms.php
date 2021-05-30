@@ -1,5 +1,5 @@
 <?php 
-/* GET DATA */
+/* GET DATA to  be inserted in customers archive */
 
 require_once __DIR__ . '/database.php';
 
@@ -13,7 +13,7 @@ if($result && $result->num_rows > 0){
 
     while($row = $result->fetch_assoc()) {
         $rooms[] = $row;
-    } // var_dump($customers);
+    } // var_dump($rooms);
     
 }  else {
     echo 'query error';

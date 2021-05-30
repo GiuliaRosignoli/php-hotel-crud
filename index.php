@@ -1,9 +1,10 @@
-<?php require_once __DIR__ .'/partials/get-rooms.php'; ?>
+<?php require_once __DIR__ .'/partials/scripts/get-rooms.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-require_once __DIR__ . '/partials/head.php'; ?>
+// Head inclusion
+require_once __DIR__ . '/partials/templates/head.php'; ?>
 
 <body>
     <main class="container">
@@ -11,8 +12,8 @@ require_once __DIR__ . '/partials/head.php'; ?>
         <table>
             <thead>
             <tr>
-                <th>id</th>
-                <th>Room</th>
+                <th>Id</th>
+                <th>Room Number</th>
                 <th></th>
             </tr>
             </thead>
@@ -22,8 +23,8 @@ require_once __DIR__ . '/partials/head.php'; ?>
                         foreach($rooms as $room) {?>
                         <tr>
                             <td><?php echo $room['id'];?></td>
-                            <td><?php echo $room['room_number'];?></td>
-                            <td><a class="text-success" href="./show.php?id=<?php echo $room['id'];?>">View Details</a></td>
+                            <td><?php echo $room['room_number']; ?></td>
+                            <td><a class="text-success" href="./show.php?id=<?php echo $room['id']; ?>">View Details</a></td>
                         </tr>
                     <?php } 
                 }
