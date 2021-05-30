@@ -1,12 +1,12 @@
 <?php require_once __DIR__ .'/partials/scripts/get-rooms.php'; ?>
 
-<?php require_once __DIR__ . '/partials/scripts/get-single-room.php'; ?>
+<?php require_once __DIR__ .'/partials/scripts/get-single-room.php'; ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head -->
-<?php require_once __DIR__ . '/partials/templates/head.php'; ?>
+<?php require_once __DIR__ .'/partials/templates/head.php'; ?>
 
 <body>
     <main>
