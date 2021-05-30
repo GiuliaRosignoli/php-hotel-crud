@@ -1,4 +1,3 @@
-<?php require_once __DIR__ .'/partials/scripts/get-rooms.php'; ?>
 
 <?php require_once __DIR__ .'/partials/scripts/get-single-room.php'; ?>
 
@@ -9,14 +8,15 @@
 <?php require_once __DIR__ .'/partials/templates/head.php'; ?>
 
 <body>
-    <main>
+    <main class="container">
         
         <?php if(!empty($room)) {?>
-            <h1><?php echo $room['room_number']; ?> </h1>
+            <h1>You have selected: room no. <?php echo $room['room_number']; ?></h1>
             <ul>
-            <li>Id: <?php echo $room['id']; ?></li>
+            <li>Room number: <?php echo $room['room_number']; ?></li>
+            <li>Room ID: <?php echo $room['id']; ?></li>
             <li>Floor: <?php echo $room['floor']; ?></li>
-            <li>Beds: <?php echo $room['beds']; ?></li>
+            <li>Number of beds: <?php echo $room['beds']; ?></li>
         </ul>
 
         <?php } else { ?>
@@ -24,7 +24,7 @@
         <?php } ?>
 
 
-       <a href="./">Return to archive</a>
+       <a id="link" href="./">Return to archive</a>
     </main>
 
 </body>
